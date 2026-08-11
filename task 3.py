@@ -9,8 +9,14 @@ df = df.sort_values(by='date')
 
 #Webpage Layout
 app.layout = html.Div(
+    style={'backgroundColor':"#414F63",'padding':'40px','minHeight':'100vh'},
     children=[
-        html.H1('Pink Morsel Sales Dashboard'),
+        html.H1(
+            'Pink Morsel Sales Dashboard',
+            style={'textAlign':'center', 'fontFamily':'Arial', 'color' : "#5C95E0" },
+        ),
+
+
 
         dcc.RadioItems(
             id='region-filter',
